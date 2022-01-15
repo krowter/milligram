@@ -1,7 +1,10 @@
 import { render } from '@testing-library/react'
 import { Picture } from './Picture'
 
-import { EmptyPictureProps } from './Picture.stories'
+export const EmptyPictureProps = {
+    src: '',
+    alt: '',
+} as const
 
 describe('<Picture />', () => {
     it('should render correctly', () => {

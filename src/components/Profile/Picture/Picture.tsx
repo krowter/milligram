@@ -2,7 +2,12 @@ import styles from './picture.module.css'
 
 import { classNames } from '../../../utils/helpers'
 
-export const Picture = ({ src, alt, size, hasBorder = true }: PictureProps) => {
+export const Picture = ({
+    src,
+    alt,
+    size = 'large',
+    hasBorder = true,
+}: PictureProps) => {
     const borderStyle = hasBorder ? styles.border : null
 
     return (
