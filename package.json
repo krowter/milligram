@@ -2,7 +2,7 @@
   "name": "milligram",
   "version": "0.0.0",
   "scripts": {
-    "test": "yarn test",
+    "test": "jest",
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
@@ -15,6 +15,7 @@
     "@babel/preset-env": "^7.16.8",
     "@babel/preset-react": "^7.16.7",
     "@babel/preset-typescript": "^7.16.7",
+    "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.4.0",
     "@types/react": "^17.0.33",
