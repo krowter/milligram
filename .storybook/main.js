@@ -1,5 +1,5 @@
 module.exports = {
-     stories: ['../src/**/*.stories.tsx'],
+    stories: ['../src/**/*.stories.tsx'],
     typescript: {
         check: false,
         checkOptions: {},
@@ -10,5 +10,8 @@ module.exports = {
                 prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
         },
     },
-    addons: ['storybook-css-modules-preset'],
+    addons: [
+        "@storybook/addon-essentials",
+        'storybook-css-modules-preset',
+    ],
 }
