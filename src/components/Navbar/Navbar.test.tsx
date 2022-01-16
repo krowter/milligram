@@ -7,15 +7,11 @@ describe('<Navbar /> unit tests', () => {
             render(<Navbar />)
         })
         it('should render correctly', () => {
-            expect(
-                screen.getByRole('link', { name: 'Milligram' })
-            ).toBeInTheDocument()
+            expect(screen.getByTestId('logo')).toBeInTheDocument()
         })
 
         it('should have correct href attribute', () => {
-            expect(
-                screen.getByRole('link', { name: 'Milligram' })
-            ).toHaveAttribute('href', '/')
+            expect(screen.getByTestId('logo')).toHaveAttribute('href', '/')
         })
     })
 

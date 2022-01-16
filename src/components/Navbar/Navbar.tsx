@@ -6,7 +6,7 @@ const PlaceholderIcon = () => <img src="https://via.placeholder.com/24x24" />
 export const Navbar = () => {
     return (
         <div className={styles.navbar}>
-            <a href="/">
+            <a data-testid="logo" href="/">
                 <Logo width={190} height={60} color="black" />
             </a>
 
