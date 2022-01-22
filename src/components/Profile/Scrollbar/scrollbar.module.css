@@ -1,0 +1,14 @@
+.scrollbar {
+    display: flex;
+    overflow-x: auto;
+}
+
+.scrollbar button[aria-label='Previous'] {
+    position: absolute;
+    left: 0;
+}
+
+.scrollbar button[aria-label='Next'] {
+    position: absolute;
+    right: 0;
+}
