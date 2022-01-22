@@ -1,5 +1,5 @@
 import styles from './navbar.module.css'
-import { ReactComponent as Logo } from '../../assets/logo.svg'
+import { ReactComponent as Logo } from 'assets/logo.svg'
 
 const PlaceholderIcon = () => <img src="https://via.placeholder.com/24x24" />
 

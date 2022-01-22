@@ -2,7 +2,7 @@ import { screen, render } from '@testing-library/react'
 
 import { Layout } from './Layout'
 
-jest.mock('../Navbar/Navbar', () => ({
+jest.mock('components/Navbar/Navbar', () => ({
     Navbar: () => <nav data-testid="navbar"></nav>,
 }))
 

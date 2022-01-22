@@ -7,11 +7,11 @@ import {
 } from '@testing-library/react'
 import faker from '@faker-js/faker'
 import { Scrollbar } from './Scrollbar'
-import { Profile } from '../../../types'
-import { PictureProps } from '../Picture/Picture'
+import { Profile } from 'types'
+import { PictureProps } from 'components/Profile/Picture/Picture'
 import { act } from 'react-dom/test-utils'
 
-jest.mock('../Picture/Picture', () => ({
+jest.mock('components/Profile/Picture/Picture', () => ({
     Picture: (props: PictureProps) => (
         <img
             alt={props.alt}

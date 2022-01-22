@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react'
-import { Profile } from '../../../types'
-import { Picture } from '../../Profile/Picture/Picture'
+import { Profile } from 'types'
+import { Picture } from 'components/Profile/Picture/Picture'
 import styles from './scrollbar.module.css'
 
 export const Scrollbar: React.FC<ScrollbarProps> = (props) => {

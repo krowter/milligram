@@ -1,6 +1,6 @@
 import faker from '@faker-js/faker'
 import { Scrollbar } from './Scrollbar'
-import { Profile } from '../../../types'
+import { Profile } from 'types'
 import { ComponentMeta, ComponentStory } from '@storybook/react'
 
 const profiles: Profile[] = [...Array(10)].map(() => ({

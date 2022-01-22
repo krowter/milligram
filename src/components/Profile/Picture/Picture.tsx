@@ -1,6 +1,6 @@
 import styles from './picture.module.css'
 
-import { classNames } from '../../../utils/helpers'
+import { classNames } from 'utils/helpers'
 
 export const Picture = ({
     src,
