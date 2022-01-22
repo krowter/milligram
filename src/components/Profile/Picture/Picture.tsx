@@ -21,7 +21,7 @@ export const Picture = ({
     )
 }
 
-type PictureProps = {
+export type PictureProps = {
     alt: string
     size: 'small' | 'medium' | 'large'
     src: string
