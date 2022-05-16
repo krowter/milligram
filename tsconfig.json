@@ -6,6 +6,7 @@
       "assets" : ["./assets"],
       "components" : ["./components"],
       "utils" : ["./utils"],
+      "icons" : ["./icons"],
     },
     "useDefineForClassFields": true,
     "lib": ["DOM", "DOM.Iterable", "ESNext"],

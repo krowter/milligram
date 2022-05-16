@@ -15,18 +15,6 @@ describe('<Navbar /> unit tests', () => {
         })
     })
 
-    describe('Search input', () => {
-        it('should contain input=search with correct placeholder', () => {
-            render(<Navbar />)
-            const form = screen.getByRole('search')
-
-            expect(form).toBeInTheDocument()
-
-            const input = within(form).getByRole('searchbox')
-            expect(input).toHaveAttribute('placeholder', 'Search')
-        })
-    })
-
     describe('Navigation', () => {
         it('should render correctly', () => {
             render(<Navbar />)

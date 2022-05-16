@@ -1,5 +1,6 @@
 import styles from './navbar.module.css'
 import { ReactComponent as Logo } from 'assets/logo.svg'
+import { SearchInput } from './SearchInput/SearchInput'
 
 const PlaceholderIcon = () => <img src="https://via.placeholder.com/24x24" />
 
@@ -10,9 +11,7 @@ export const Navbar = () => {
                 <Logo width={190} height={60} color="black" />
             </a>
 
-            <form role="search">
-                <input type="search" placeholder="Search" />
-            </form>
+            <SearchInput />
 
             <nav className={styles.navitems}>
                 <li>
