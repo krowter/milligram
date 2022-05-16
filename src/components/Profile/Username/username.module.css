@@ -1,0 +1,7 @@
+.username {
+    display: inline-block;
+    max-width: 10ch;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

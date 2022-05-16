@@ -10,7 +10,7 @@ const profiles: Profile[] = [...Array(10)].map(() => ({
 }))
 
 export default {
-    title: 'Scrosllbar',
+    title: 'Scrollbar',
     component: Scrollbar,
 } as ComponentMeta<typeof Scrollbar>
 
