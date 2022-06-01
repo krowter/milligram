@@ -1,6 +1,22 @@
+.wrapper {
+    position: relative;
+}
+
 .scrollbar {
     display: flex;
     overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+}
+
+.scrollbar button {
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 0.25rem 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .scrollbar button[aria-label='Previous'] {

@@ -1,4 +1,6 @@
 .navbar {
+    max-width: 1140px;
+    margin: 0 auto;
     align-items: center;
     display: flex;
     justify-content: space-between;
