@@ -1,0 +1,29 @@
+FROM node:18-alpine as web
+ENV NODE_ENV development
+
+WORKDIR /app
+
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["yarn", "dev"]
+
+FROM node:16-alpine as storybook
+ENV NODE_ENV development
+
+WORKDIR /app
+
+COPY package.json .
+COPY yarn.lock .
+RUN yarn install
+
+COPY . .
+
+EXPOSE 9009
+
+CMD ["yarn", "storybook"]
