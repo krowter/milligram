@@ -6,11 +6,4 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - '8000:80' 
-  storybook:
-    build:
-      context: ./
-      target: storybook
-      dockerfile: Dockerfile
-    ports:
-      - '8080:9009' 
+      - '8000:80'
