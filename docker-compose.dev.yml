@@ -6,6 +6,7 @@ services:
       context: ./
       target: web
       dockerfile: Dockerfile.dev
+    command: yarn dev
     volumes:
       - ./:/app
     ports:
@@ -15,6 +16,7 @@ services:
       context: ./
       target: storybook
       dockerfile: Dockerfile.dev
+    command: yarn storybook
     volumes:
       - ./:/app
     ports:
